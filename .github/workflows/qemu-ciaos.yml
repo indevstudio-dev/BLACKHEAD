@@ -1,0 +1,11 @@
+name: CIAOS QEMU
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CIAOS QEMU validation remains inactive until the adapter is executable."

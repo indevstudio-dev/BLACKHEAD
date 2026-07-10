@@ -1,0 +1,14 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/common.proto";
+message ImagePullRequest {
+  RequestContext context = 1;
+  string reference = 2;
+  string platform = 3;
+}
+message ImageRecord {
+  string digest = 1;
+  string reference = 2;
+  string platform = 3;
+  uint64 size_bytes = 4;
+}

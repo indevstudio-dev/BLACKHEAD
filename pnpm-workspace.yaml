@@ -1,0 +1,4 @@
+packages:
+  - "future/web-console/**"
+  - "future/cloud/**"
+  - "tools/**"

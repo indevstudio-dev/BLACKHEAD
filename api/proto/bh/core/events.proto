@@ -1,0 +1,10 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/container.proto";
+message Event {
+  uint64 sequence = 1;
+  int64 observed_at_unix_ms = 2;
+  string kind = 3;
+  ContainerId container_id = 4;
+  bytes payload = 5;
+}

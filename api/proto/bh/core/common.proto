@@ -1,0 +1,16 @@
+syntax = "proto3";
+package bh.core.v1;
+message RequestContext {
+  bytes request_id = 1;
+  bytes session_id = 2;
+  int64 sent_at_unix_ms = 3;
+  string idempotency_key = 4;
+}
+message Error {
+  string code = 1;
+  string category = 2;
+  string safe_message = 3;
+  bool retryable = 4;
+  bytes operation_id = 5;
+}
+message Empty {}

@@ -1,0 +1,5 @@
+* @indevstudio-dev
+/api/ @indevstudio-dev
+/crates/bh-supervisor/ @indevstudio-dev
+/magisk/ @indevstudio-dev
+/.github/workflows/ @indevstudio-dev

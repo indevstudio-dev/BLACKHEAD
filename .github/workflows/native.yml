@@ -1,0 +1,11 @@
+name: Native
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Native build activates when the first runtime target is implemented."

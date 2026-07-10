@@ -1,0 +1,9 @@
+version: v2
+clean: true
+plugins:
+  - remote: buf.build/protocolbuffers/go
+    out: api/generated/go
+  - remote: buf.build/protocolbuffers/kotlin
+    out: api/generated/kotlin
+  - remote: buf.build/community/neoeinstein-prost
+    out: api/generated/rust

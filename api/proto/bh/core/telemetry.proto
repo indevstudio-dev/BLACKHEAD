@@ -1,0 +1,11 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/container.proto";
+message RuntimeStats {
+  ContainerId container_id = 1;
+  uint64 cpu_time_nanos = 2;
+  uint64 memory_bytes = 3;
+  uint64 process_count = 4;
+  uint64 read_bytes = 5;
+  uint64 write_bytes = 6;
+}

@@ -1,0 +1,6 @@
+id=blackhead_runtime
+name=BLACKHEAD Runtime
+version=development-scaffold
+versionCode=1
+author=INDEVSTUDIO Inc.
+description=Development scaffold only. Contains no installable BLACKHEAD runtime payload.

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/common.proto";
+message NodeInfoRequest { RequestContext context = 1; }
+message NodeInfo {
+  string node_id = 1;
+  string state = 2;
+  string architecture = 3;
+  string backend = 4;
+  repeated string feature_flags = 5;
+}

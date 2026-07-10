@@ -1,0 +1,14 @@
+{
+  "name": "@indevstudio/blackhead-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "check": "pnpm -r --if-present run check",
+    "lint": "pnpm -r --if-present run lint",
+    "test": "pnpm -r --if-present run test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible BLACKHEAD defect
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Remove secrets, device identifiers, private registry names, and sensitive logs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Android API, kernel, ABI, Magisk version, isolation profile, and BH commit.
+    validations:
+      required: true

@@ -1,0 +1,16 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/common.proto";
+message ContainerId { string value = 1; }
+message ContainerCreateRequest {
+  RequestContext context = 1;
+  ContainerId id = 2;
+  string image_digest = 3;
+  string isolation_profile = 4;
+}
+message ContainerRecord {
+  ContainerId id = 1;
+  string state = 2;
+  string isolation_profile = 3;
+  string image_digest = 4;
+}

@@ -1,0 +1,6 @@
+openapi: 3.1.0
+info:
+  title: BLACKHEAD Future Control Plane
+  version: 0.0.0
+  description: Documentation-only contract placeholder. This API is not implemented or deployed.
+paths: {}

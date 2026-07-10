@@ -1,0 +1,11 @@
+name: Integration
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Integration requires a supported namespace host or rooted-device runner."

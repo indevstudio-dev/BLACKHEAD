@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.rs text eol=lf
+*.go text eol=lf
+*.kt text eol=lf
+*.kts text eol=lf
+*.proto text eol=lf
+*.apk binary
+*.zip binary
+*.so binary

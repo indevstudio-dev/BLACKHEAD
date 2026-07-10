@@ -1,0 +1,11 @@
+syntax = "proto3";
+package bh.core.v1;
+import "bh/core/common.proto";
+import "bh/core/container.proto";
+message ExecCreateRequest {
+  RequestContext context = 1;
+  ContainerId container_id = 2;
+  repeated string argv = 3;
+  bool terminal = 4;
+}
+message ExecHandle { string value = 1; }
